@@ -1,0 +1,18 @@
+﻿{
+"name": "ConnectionAlert",
+"description" : "Оповещение о разрыве сессии NCE-T",
+"version" : "1.0",
+"manifest_version" : 2,
+"content_scripts": [
+{
+	"matches":["<all_urls>"],
+	"js": ["checkconnection.js"]
+}
+],
+"web_accessible_resources":[
+"Warning.mp3"
+],
+"browser_action": {
+"default_popup" : "popup.html"
+ }
+}
